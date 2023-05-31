@@ -54,7 +54,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
           </Text>
         </Box>
         <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-          詳細準備中
+          Learn more
         </Button>
       </Stack>
     </Box>
@@ -95,7 +95,7 @@ export default function gridListWith() {
             heading={"WEBマーケティング支援"}
             icon={<Icon as={FcDonate} w={10} h={10} />}
             description={
-              "パートナーインフルエンサーによるインフルエンサーマーケティング支援、SEO・SNSコンテンツマーケティングの相談を承っております。"
+              "パートナーインフルエンサーマーケティング支援、SEO・SNSコンテンツマーケティングの相談を承っております。"
             }
             href={"#"}
           />

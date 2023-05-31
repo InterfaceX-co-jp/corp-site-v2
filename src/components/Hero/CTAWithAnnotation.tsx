@@ -31,7 +31,7 @@ export default function CallToActionWithAnnotation() {
             Develop The Best <br />
             最高のプロダクトを創る。
           </Heading>
-          <Text color={"gray.500"}>WEBプロダクト開発ならInterfaceX</Text>
+          {/* <Text color={"gray.500"}>WEBプロダクト開発ならInterfaceX</Text> */}
         </Stack>
       </Container>
     </>
