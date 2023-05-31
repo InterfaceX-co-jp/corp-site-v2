@@ -57,7 +57,7 @@ export default function About() {
               alignSelf={"flex-start"}
               rounded={"md"}
             >
-              Our Edige
+              Our Edge
             </Text>
             <Heading>
               アジャイル開発{" "}

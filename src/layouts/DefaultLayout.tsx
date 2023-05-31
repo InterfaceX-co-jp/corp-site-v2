@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { ReactNode } from "react";
 import Header from "@/layouts/Header";
+import Footer from "@/layouts/Footer";
 
 interface Props {
   children: ReactNode;
@@ -18,6 +19,7 @@ export default function DefaultLayout({ children }: Props) {
       </Head>
       <Header />
       <main className={`${styles.main}`}>{children}</main>
+      <Footer />
     </>
   );
 }

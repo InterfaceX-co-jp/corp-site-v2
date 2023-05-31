@@ -25,13 +25,13 @@ export default function CallToActionWithAnnotation() {
             fontWeight={600}
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
+            bgGradient="linear(to-l, #7928CA, #FF0080)"
+            bgClip="text"
           >
             Develop The Best <br />
-            <Text as={"span"} color={"green.400"}>
-              最高のプロダクトを作る
-            </Text>
+            最高のプロダクトを創る。
           </Heading>
-          <Text color={"gray.500"}>ああああ最高のプロダクト開発組織を作る</Text>
+          <Text color={"gray.500"}>WEBプロダクト開発ならInterfaceX</Text>
         </Stack>
       </Container>
     </>
