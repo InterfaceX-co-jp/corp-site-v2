@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import Header from "@/layouts/Header";
 import Footer from "@/layouts/Footer";
 import { staticPath } from "@/lib/$path";
+import CTAStickyContainer from "./CTAStickyContainer";
 
 interface Props {
   children: ReactNode;
@@ -24,6 +25,7 @@ export default function DefaultLayout({ children }: Props) {
       <Header />
       <main className={`${styles.main}`}>{children}</main>
       <Footer />
+      <CTAStickyContainer />
     </>
   );
 }
