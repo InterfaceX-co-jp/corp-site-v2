@@ -49,7 +49,7 @@ export default function App() {
     <Canvas
       shadows
       orthographic
-      camera={{ position: [10, 20, 20], zoom: 20 }}
+      camera={{ position: [10, 20, 20], zoom: 8 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <color attach="background" args={["#f2f2f5"]} />
