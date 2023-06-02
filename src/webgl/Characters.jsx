@@ -20,36 +20,30 @@ import {
 } from "@react-three/postprocessing";
 import { staticPath } from "@/lib/$path";
 
-const renderConfig = {
-  text: "InterfaceX",
-  backside: true,
-  backsideThickness: { value: 0.3, min: 0, max: 2 },
-  samples: { value: 16, min: 1, max: 32, step: 1 },
-  resolution: { value: 1024, min: 64, max: 2048, step: 64 },
-  transmission: { value: 1, min: 0, max: 1 },
-  clearcoat: { value: 0, min: 0.1, max: 1 },
-  clearcoatRoughness: { value: 0.0, min: 0, max: 1 },
-  thickness: { value: 0.3, min: 0, max: 5 },
-  chromaticAberration: { value: 5, min: 0, max: 5 },
-  anisotropy: { value: 0.3, min: 0, max: 1, step: 0.01 },
-  roughness: { value: 0, min: 0, max: 1, step: 0.01 },
-  distortion: { value: 0.5, min: 0, max: 4, step: 0.01 },
-  distortionScale: { value: 0.1, min: 0.01, max: 1, step: 0.01 },
-  temporalDistortion: { value: 0, min: 0, max: 1, step: 0.01 },
-  ior: { value: 1.5, min: 0, max: 2, step: 0.01 },
-  color: "#ff9cf5",
-  gColor: "#ff7eb3",
-  shadow: "#750d57",
-  autoRotate: true,
-  autoRotateSpeed: 10,
-};
-
 export default function App() {
-  const { autoRotate, text, shadow, ...config } =
-    process.env.NODE_ENV === "development"
-      ? // eslint-disable-next-line react-hooks/rules-of-hooks
-        useControls(renderConfig)
-      : renderConfig;
+  const { autoRotate, text, shadow, ...config } = useControls({
+    text: "InterfaceX",
+    backside: true,
+    backsideThickness: { value: 0.3, min: 0, max: 2 },
+    samples: { value: 16, min: 1, max: 32, step: 1 },
+    resolution: { value: 1024, min: 64, max: 2048, step: 64 },
+    transmission: { value: 1, min: 0, max: 1 },
+    clearcoat: { value: 0, min: 0.1, max: 1 },
+    clearcoatRoughness: { value: 0.0, min: 0, max: 1 },
+    thickness: { value: 0.3, min: 0, max: 5 },
+    chromaticAberration: { value: 5, min: 0, max: 5 },
+    anisotropy: { value: 0.3, min: 0, max: 1, step: 0.01 },
+    roughness: { value: 0, min: 0, max: 1, step: 0.01 },
+    distortion: { value: 0.5, min: 0, max: 4, step: 0.01 },
+    distortionScale: { value: 0.1, min: 0.01, max: 1, step: 0.01 },
+    temporalDistortion: { value: 0, min: 0, max: 1, step: 0.01 },
+    ior: { value: 1.5, min: 0, max: 2, step: 0.01 },
+    color: "#ff9cf5",
+    gColor: "#ff7eb3",
+    shadow: "#750d57",
+    autoRotate: true,
+    autoRotateSpeed: 10,
+  });
 
   return (
     <Canvas
