@@ -1,11 +1,13 @@
 import { Box, Heading, Container, Stack, createIcon } from "@chakra-ui/react";
 import Characters from "@/webgl/Characters";
+import { Leva } from "leva";
 
 export default function CallToActionWithAnnotation() {
   return (
     <>
       <Box w={"100vw"} h={"50vh"}>
         <Characters />
+        <Leva hidden={process.env.NODE_ENV === "development" ? false : true} />
       </Box>
     </>
   );
