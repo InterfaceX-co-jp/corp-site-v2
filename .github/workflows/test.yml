@@ -7,7 +7,6 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - run: sudo apt-get install fonts-noto
       - uses: actions/checkout@v2
       - name: setup Node.js
         uses: actions/setup-node@v1
