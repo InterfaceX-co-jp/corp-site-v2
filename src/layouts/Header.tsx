@@ -1,12 +1,4 @@
-import { ReactNode } from "react";
-import {
-  Box,
-  Flex,
-  Button,
-  useColorModeValue,
-  Stack,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Box, Flex, Button, Stack, useColorMode } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 export default function Nav() {
