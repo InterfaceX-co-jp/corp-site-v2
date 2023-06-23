@@ -12,6 +12,7 @@ export default function Nav() {
         top={0}
         backdropFilter="auto"
         backdropBlur="8px"
+        zIndex={"sticky"}
       >
         <Flex
           h={16}

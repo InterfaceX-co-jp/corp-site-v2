@@ -5,6 +5,7 @@ import Header from "@/layouts/Header";
 import Footer from "@/layouts/Footer";
 import { staticPath } from "@/lib/$path";
 import CTAStickyContainer from "./CTAStickyContainer";
+import { chakra as ChakraFactory } from "@chakra-ui/react";
 
 interface Props {
   children: ReactNode;
@@ -14,7 +15,7 @@ export default function DefaultLayout({ children }: Props) {
   return (
     <>
       <Head>
-        <title>InterfaceX</title>
+        <ChakraFactory.title>InterfaceX</ChakraFactory.title>
         <meta
           name="description"
           content="「いい感じのWEB」をお手頃価格本格的なクオリティで新提案。開発案件なら業界トップレベルのエンジニアが多数在籍する私たちにお任せください。"
