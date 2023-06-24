@@ -31,6 +31,7 @@ export const staticPath = {
   next_svg: '/next.svg',
   nuxt_png: '/nuxt.png',
   site_webmanifest: '/site.webmanifest',
+  sk_png: '/sk.png',
   storybook_png: '/storybook.png',
   terraform_png: '/terraform.png',
   typescript_png: '/typescript.png',
