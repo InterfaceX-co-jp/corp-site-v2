@@ -7,7 +7,7 @@ import {
   Text,
   Stack,
   Image,
-  Divider,
+  Card,
 } from "@chakra-ui/react";
 
 export default function TechStacks() {
@@ -23,55 +23,83 @@ export default function TechStacks() {
       </Stack>
 
       <Container maxW={"6xl"} mt={12}>
-        <Box mb={4}>
-          <Heading as={"h4"} size="md" textColor={"gray"} mb={4}>
+        <Card mb={4} p={4}>
+          <Heading
+            as={"h4"}
+            size="md"
+            textColor={"gray"}
+            mb={4}
+            textAlign={"center"}
+          >
             Frontend
           </Heading>
-          <Flex gap={4}>
+          <Flex gap={4} flexWrap={"wrap"} justifyContent={"center"}>
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.typescript_png}
               alt={"TypeScript logo"}
             />
             <Image
-              h={"100px"}
+              h={"60px"}
               w={"auto"}
               src={staticPath.next_png}
               alt={"next.js logo"}
             />
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.nuxt_png}
               alt={"nuxt.js logo"}
             />
           </Flex>
-        </Box>
-        <Box mb={4}>
-          <Heading as={"h4"} size="md" textColor={"gray"}>
+        </Card>
+        <Card mb={4} p={4}>
+          <Heading
+            as={"h4"}
+            size="md"
+            textColor={"gray"}
+            mb={4}
+            textAlign={"center"}
+          >
             Design Ops
           </Heading>
-          <Flex gap={4} alignItems={"center"}>
+          <Flex
+            gap={4}
+            alignItems={"center"}
+            justifyContent={"center"}
+            flexWrap={"wrap"}
+          >
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.storybook_png}
               alt={"storybook logo"}
             />
             <Image
               w={"auto"}
-              h={"70px"}
+              h={"60px"}
               src={staticPath.figma_png}
               alt={"figma logo"}
             />
           </Flex>
-        </Box>
-        <Box mb={4}>
-          <Heading as={"h4"} size="md" textColor={"gray"} mb={4}>
+        </Card>
+        <Card mb={4} p={4}>
+          <Heading
+            as={"h4"}
+            size="md"
+            textColor={"gray"}
+            mb={4}
+            textAlign={"center"}
+          >
             Fullstack Frameworks / Backends
           </Heading>
-          <Flex gap={4} alignItems={"center"}>
+          <Flex
+            gap={4}
+            alignItems={"center"}
+            justifyContent={"center"}
+            flexWrap={"wrap"}
+          >
             <Image
               w={"auto"}
               h={"60px"}
@@ -80,29 +108,40 @@ export default function TechStacks() {
             />
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.frourio_png}
               alt={"frourio logo"}
             />
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.graphql_png}
               alt={"graphql logo"}
             />
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.laravel_png}
               alt={"laravel logo"}
             />
           </Flex>
-        </Box>
-        <Box mb={4}>
-          <Heading as={"h4"} size="md" textColor={"gray"} mb={4}>
+        </Card>
+        <Card mb={4} p={4}>
+          <Heading
+            as={"h4"}
+            size="md"
+            textColor={"gray"}
+            mb={4}
+            textAlign={"center"}
+          >
             Database / Middlewares / Protocols
           </Heading>
-          <Flex gap={8} alignItems={"center"}>
+          <Flex
+            gap={8}
+            alignItems={"center"}
+            justifyContent={"center"}
+            flexWrap={"wrap"}
+          >
             <Image
               w={"auto"}
               h={"60px"}
@@ -117,55 +156,66 @@ export default function TechStacks() {
             />
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.grpc_png}
               alt={"grpc logo"}
             />
             <Image
               w={"auto"}
-              h={"50px"}
+              h={"60px"}
               src={staticPath.elasticsearch_png}
               alt={"elasticsearch logo"}
             />
           </Flex>
-        </Box>
-        <Box mb={4}>
-          <Heading as={"h4"} size="md" textColor={"gray"} mb={4}>
+        </Card>
+        <Card mb={4} p={4}>
+          <Heading
+            as={"h4"}
+            size="md"
+            textColor={"gray"}
+            mb={4}
+            textAlign={"center"}
+          >
             Infrastructures
           </Heading>
-          <Flex gap={8} alignItems={"center"}>
+          <Flex
+            gap={8}
+            alignItems={"center"}
+            justifyContent={"center"}
+            flexWrap={"wrap"}
+          >
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.aws_jpg}
               alt={"aws logo"}
             />
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.terraform_png}
               alt={"terraform logo"}
             />
             <Image
               w={"auto"}
-              h={"80px"}
+              h={"60px"}
               src={staticPath.firebase_png}
               alt={"firebase logo"}
             />
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.mongodb_atlas_png}
               alt={"mongodb atlas logo"}
             />
             <Image
               w={"auto"}
-              h={"100px"}
+              h={"60px"}
               src={staticPath.docker_png}
               alt={"docker logo"}
             />
           </Flex>
-        </Box>
+        </Card>
       </Container>
     </Box>
   );
