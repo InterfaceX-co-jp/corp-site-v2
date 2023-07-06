@@ -20,6 +20,7 @@ export const staticPath = {
   figma_png: '/figma.png',
   firebase_png: '/firebase.png',
   frourio_png: '/frourio.png',
+  go_echo_png: '/go-echo.png',
   go_png: '/go.png',
   graphql_png: '/graphql.png',
   grpc_png: '/grpc.png',
