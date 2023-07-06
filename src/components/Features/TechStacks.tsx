@@ -109,6 +109,12 @@ export default function TechStacks() {
             <Image
               w={"auto"}
               h={"60px"}
+              src={staticPath.go_echo_png}
+              alt={"go echo framework"}
+            />
+            <Image
+              w={"auto"}
+              h={"60px"}
               src={staticPath.frourio_png}
               alt={"frourio logo"}
             />
@@ -156,7 +162,7 @@ export default function TechStacks() {
             />
             <Image
               w={"auto"}
-              h={"60px"}
+              h={"100px"}
               src={staticPath.grpc_png}
               alt={"grpc logo"}
             />
