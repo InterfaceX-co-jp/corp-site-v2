@@ -31,7 +31,7 @@ export default function Nav() {
             <Stack direction={"row"} spacing={7}>
               <Button alignItems={"center"} onClick={handleClickInterfaceX3}>
                 <ExternalLinkIcon mr={4} />
-                Web3（InterfaceX3.0）
+                Web3
               </Button>
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
