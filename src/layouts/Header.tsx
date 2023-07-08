@@ -1,8 +1,12 @@
 import { Box, Flex, Button, Stack, useColorMode } from "@chakra-ui/react";
-import { MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
+
+  const handleClickInterfaceX3 = () => {
+    window.open("https://web3.interface-x.org/", "_blank");
+  };
 
   return (
     <>
@@ -25,6 +29,10 @@ export default function Nav() {
 
           <Flex alignItems={"center"} px={4}>
             <Stack direction={"row"} spacing={7}>
+              <Button alignItems={"center"} onClick={handleClickInterfaceX3}>
+                <ExternalLinkIcon mr={4} />
+                Web3（InterfaceX3.0）
+              </Button>
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </Button>
